@@ -28,8 +28,8 @@ public class Student {
         System.out.println("\n--- Student Result ---");
         System.out.println("Name: " + name);
         System.out.println("Total Marks: " + total);
-        System.out.printf("Average: %.2f\n", average);
-        System.out.println("Grade: " + grade);
+        System.out.printf("Average: "+average);
+        System.out.println("\nGrade: " + grade);
         System.out.println("Result: " + result);
     }
 }
