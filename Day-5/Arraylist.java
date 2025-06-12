@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-class ArrayList {
+class Arraylist {
     public static void main(String[] args) {
         ArrayList<Integer> arr=new ArrayList();
         ArrayList<Object> arr2=new ArrayList();
