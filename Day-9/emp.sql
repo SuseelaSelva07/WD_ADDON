@@ -558,3 +558,29 @@ mysql> select count(*)
 |       14 |
 +----------+
 1 row in set (0.00 sec)
+
+mysql> select count(*),deptno
+    -> from emp
+    -> where job='clerk'
+    -> group by deptno
+    -> having count(*)>=2;
++----------+--------+
+| count(*) | deptno |
++----------+--------+
+|        2 |     20 |
++----------+--------+
+1 row in set (0.00 sec)
+
+mysql> select avg(sal),job
+    -> from emp
+    -> group by job
+    -> having avg(sal)>=2000;
++-------------+-----------+
+| avg(sal)    | job       |
++-------------+-----------+
+| 2758.333333 | MANAGER   |
+| 3000.000000 | ANALYST   |
+| 5000.000000 | PRESIDENT |
++-------------+-----------+
+3 rows in set (0.00 sec)
+
