@@ -162,3 +162,17 @@ mysql> select *
 +-------+--------+-----------+------+------------+---------+---------+--------+--------+------------+----------+
 15 rows in set (0.00 sec)
 
+
+mysql> select e1.ename emp_name,e2.ename mgr_name
+    -> from emp e1,emp e2
+    -> where e1.mgr=e2.empno AND e1.job='clerk';
++----------+----------+
+| emp_name | mgr_name |
++----------+----------+
+| JAMES    | BLAKE    |
+| MILLER   | CLARK    |
+| ADAMS    | SCOTT    |
+| SMITH    | FORD     |
++----------+----------+
+4 rows in set (0.00 sec)
+
