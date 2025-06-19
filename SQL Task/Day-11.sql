@@ -207,3 +207,6 @@ mysql> select *
 | Taeshi |  1995 | Maths   |    99 |
 +--------+-------+---------+-------+
 1 row in set (0.00 sec)
+
+3. Join Order and customers
+
