@@ -1,4 +1,4 @@
-To count students per course:
+1.To count students per course:
   
 CREATE TABLE Stud (
   Sid int,
