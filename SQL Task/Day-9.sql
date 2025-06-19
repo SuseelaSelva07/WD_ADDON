@@ -29,3 +29,5 @@ mysql> select courfees
 |    25000 |
 +----------+
 7 rows in set (0.00 sec)
+
+3. Search books by keyword using LIKE
