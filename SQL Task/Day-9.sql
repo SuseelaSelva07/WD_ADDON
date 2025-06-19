@@ -1,3 +1,5 @@
+2. List courses by ascending fees
+
 mysql> select * from student ORDER BY courfees ASC;
 +--------+-------+------------------+----------+-----------+----------+
 | sname  | sroll | sgmail           | phnum    | course    | courfees |
