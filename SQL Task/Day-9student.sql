@@ -1,6 +1,6 @@
 To count students per course:
   
-CREATE TABLE Student (
+CREATE TABLE Stud (
   Sid int,
   Sname varchar(15),
   Scourse varchar(10),
@@ -8,14 +8,14 @@ CREATE TABLE Student (
 );
 
 -- insert
-INSERT INTO Student(Sid,Sname,Scourse,Sdept) VALUES (1, 'Adam','computer' ,'Salesman');
-INSERT INTO Student(Sid,Sname,Scourse,Sdept) VALUES (2, 'David','science' ,'manager');
-INSERT INTO Student(Sid,Sname,Scourse,Sdept) VALUES (3, 'Amar','maths' ,'Salesman');
-INSERT INTO Student(Sid,Sname,Scourse,Sdept) VALUES (4, 'ivara','english' ,'clerk');
-INSERT INTO Student(Sid,Sname,Scourse,Sdept) VALUES (5, 'shivi','cs' ,'clerk');
-INSERT INTO Student(Sid,Sname,Scourse,Sdept) VALUES (6, 'sneha','maths' ,'manager');
-INSERT INTO Student(Sid,Sname,Scourse,Sdept) VALUES (7, 'Aishu','english' ,'Salesman');
-INSERT INTO Student(Sid,Sname,Scourse,Sdept) VALUES (8, 'Amala','science' ,'President');
+INSERT INTO Student(Sid,Sname,Scourse,Sdept) VALUES (1, 'Sushii','computer' ,'Salesman');
+INSERT INTO Student(Sid,Sname,Scourse,Sdept) VALUES (2, 'Taeshi','science' ,'manager');
+INSERT INTO Student(Sid,Sname,Scourse,Sdept) VALUES (3, 'Kookie','maths' ,'Salesman');
+INSERT INTO Student(Sid,Sname,Scourse,Sdept) VALUES (4, 'Jooni','english' ,'clerk');
+INSERT INTO Student(Sid,Sname,Scourse,Sdept) VALUES (5, 'Yoongi','cs' ,'clerk');
+INSERT INTO Student(Sid,Sname,Scourse,Sdept) VALUES (6, 'RM','maths' ,'manager');
+INSERT INTO Student(Sid,Sname,Scourse,Sdept) VALUES (7, 'Mochi','english' ,'Salesman');
+INSERT INTO Student(Sid,Sname,Scourse,Sdept) VALUES (8, 'Monie','science' ,'President');
 
 
 --fetch
