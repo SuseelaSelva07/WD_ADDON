@@ -1,0 +1,81 @@
+package Mysqlprogram;
+
+import java.sql.*;
+
+public class jdbcMain {
+
+	public static void main(String[] args) throws Exception {
+		
+//		Class.forName("com.mysql.cj.jdbc.Driver");
+		String Url="jdbc:mysql://localhost:3306/employees";
+		String userName="root";
+		String Password="Kgisl@123";
+		
+		Connection connect=DriverManager.getConnection(Url,userName,Password);
+	    System.out.println("Driver Loaded");
+		
+//		Statement st=connect.createStatement();	 
+		 
+		   int cid=03;
+		   String cname="IMS";
+		    String sql="insert into course values(?,?)";
+		     PreparedStatement st=connect.prepareStatement(sql);
+		     st.setInt(1,cid);
+		     st.setString(2, cname);
+		      
+		     
+		    st.executeUpdate();
+		    System.out.println("Record inserted successfully using preparedstatement");
+		     
+//		
+//		                                               //GET THE VALUES
+		
+//		String sql="select name from emp where salary>=2000";
+//		
+//		 String sql="select* from emp";
+		 
+//		 ResultSet rs=st.executeQuery(sql);
+//		 while(rs.next()) {
+//			 System.out.println(rs.getString(1));
+//		 }
+//		 rs.next();
+//		 System.out.println(rs.getInt(1)+" "+rs.getString(2));
+//		 rs.next();
+//		 System.out.println(rs.getInt(1)+" "+rs.getString(2));
+		   
+		                                           //CREATE A NEW TABLE
+		
+//		String sql="create table course(cid int,cname varchar(20))";
+//		 
+//		int value=st.executeUpdate(sql);
+//		 
+//		System.out.println("Table successfully created");
+//		
+//		                                          INSERT THE VALUES 
+		
+//		String sql="insert into course values(01,'FSD')"; 
+//		 
+//		int val=st.executeUpdate(sql);
+//		 
+//		System.out.println("inserted"+" "+val+"rows");
+//		  
+//		
+		  
+//		                                        UPDATE THE VALUES
+		  
+//		String sql="update course set cname='WD' where cid=01"; 
+//	 
+//		int val=st.executeUpdate(sql);	 
+//		
+//	    System.out.println("Updated"+" "+val+"rows");
+//		
+		
+//		                                       DELETE THE VALUES
+		   
+		  
+//		String sql="drop table Course"; 
+ 
+//		int val=st.executeUpdate(sql);	 
+//	
+//       System.out.println(" table Deleted");
+		
