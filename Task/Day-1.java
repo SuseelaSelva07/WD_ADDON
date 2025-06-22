@@ -19,7 +19,7 @@ class Evennumber {
 2. Simple intrest calculator using if
 
 import java.util.Scanner;
-public class SimpleInterestCalculator {
+public class Interest {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter amount: ");
